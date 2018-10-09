@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		394CFED9216D3E6100C62593 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFED8216D3E6100C62593 /* AppDelegate.m */; };
-		394CFEDC216D3E6100C62593 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFEDB216D3E6100C62593 /* ViewController.m */; };
 		394CFEDF216D3E6100C62593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394CFEDD216D3E6100C62593 /* Main.storyboard */; };
 		394CFEE1216D3E6100C62593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 394CFEE0216D3E6100C62593 /* Assets.xcassets */; };
 		394CFEE4216D3E6100C62593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394CFEE2216D3E6100C62593 /* LaunchScreen.storyboard */; };
@@ -19,8 +18,6 @@
 		394CFED4216D3E6100C62593 /* Astronomy ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astronomy ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		394CFED7216D3E6100C62593 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		394CFED8216D3E6100C62593 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		394CFEDA216D3E6100C62593 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		394CFEDB216D3E6100C62593 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		394CFEDE216D3E6100C62593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		394CFEE0216D3E6100C62593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		394CFEE3216D3E6100C62593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,17 +57,47 @@
 		394CFED6216D3E6100C62593 /* Astronomy ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				394CFEEE216D4E8F00C62593 /* App Lifecycle */,
+				394CFEEF216D4E9C00C62593 /* View Controllers */,
+				394CFEF0216D4EA600C62593 /* Storyboards */,
+				394CFEF1216D4EAE00C62593 /* Resources */,
+			);
+			path = "Astronomy ObjC";
+			sourceTree = "<group>";
+		};
+		394CFEEE216D4E8F00C62593 /* App Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
 				394CFED7216D3E6100C62593 /* AppDelegate.h */,
 				394CFED8216D3E6100C62593 /* AppDelegate.m */,
-				394CFEDA216D3E6100C62593 /* ViewController.h */,
-				394CFEDB216D3E6100C62593 /* ViewController.m */,
+			);
+			path = "App Lifecycle";
+			sourceTree = "<group>";
+		};
+		394CFEEF216D4E9C00C62593 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		394CFEF0216D4EA600C62593 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				394CFEDD216D3E6100C62593 /* Main.storyboard */,
-				394CFEE0216D3E6100C62593 /* Assets.xcassets */,
 				394CFEE2216D3E6100C62593 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		394CFEF1216D4EAE00C62593 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				394CFEE0216D3E6100C62593 /* Assets.xcassets */,
 				394CFEE5216D3E6100C62593 /* Info.plist */,
 				394CFEE6216D3E6100C62593 /* main.m */,
 			);
-			path = "Astronomy ObjC";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +170,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				394CFEDC216D3E6100C62593 /* ViewController.m in Sources */,
 				394CFEE7216D3E6100C62593 /* main.m in Sources */,
 				394CFED9216D3E6100C62593 /* AppDelegate.m in Sources */,
 			);
@@ -288,8 +314,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 39ZVY2XGME;
-				INFOPLIST_FILE = "Astronomy ObjC/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Astronomy ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,8 +331,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 39ZVY2XGME;
-				INFOPLIST_FILE = "Astronomy ObjC/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Astronomy ObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
