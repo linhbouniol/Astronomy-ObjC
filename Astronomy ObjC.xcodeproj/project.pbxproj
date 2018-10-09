@@ -26,6 +26,7 @@
 		394CFEE3216D3E6100C62593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		394CFEE5216D3E6100C62593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		394CFEE6216D3E6100C62593 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		394CFEED216D3F2200C62593 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		394CFECB216D3E6100C62593 = {
 			isa = PBXGroup;
 			children = (
+				394CFEED216D3F2200C62593 /* README.md */,
 				394CFED6216D3E6100C62593 /* Astronomy ObjC */,
 				394CFED5216D3E6100C62593 /* Products */,
 			);
