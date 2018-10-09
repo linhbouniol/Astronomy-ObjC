@@ -12,6 +12,8 @@
 		394CFEE1216D3E6100C62593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 394CFEE0216D3E6100C62593 /* Assets.xcassets */; };
 		394CFEE4216D3E6100C62593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394CFEE2216D3E6100C62593 /* LaunchScreen.storyboard */; };
 		394CFEE7216D3E6100C62593 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFEE6216D3E6100C62593 /* main.m */; };
+		394CFEF4216D506800C62593 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394CFEF3216D506800C62593 /* PhotosCollectionViewController.swift */; };
+		394CFEF8216D50C700C62593 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394CFEF7216D50C700C62593 /* PhotoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		394CFEE5216D3E6100C62593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		394CFEE6216D3E6100C62593 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		394CFEED216D3F2200C62593 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		394CFEF2216D506700C62593 /* Astronomy ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Astronomy ObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		394CFEF3216D506800C62593 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		394CFEF7216D50C700C62593 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,9 @@
 		394CFEEF216D4E9C00C62593 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				394CFEF3216D506800C62593 /* PhotosCollectionViewController.swift */,
+				394CFEF2216D506700C62593 /* Astronomy ObjC-Bridging-Header.h */,
+				394CFEF7216D50C700C62593 /* PhotoDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -131,6 +139,7 @@
 				TargetAttributes = {
 					394CFED3216D3E6100C62593 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -170,7 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394CFEF4216D506800C62593 /* PhotosCollectionViewController.swift in Sources */,
 				394CFEE7216D3E6100C62593 /* main.m in Sources */,
+				394CFEF8216D50C700C62593 /* PhotoDetailViewController.swift in Sources */,
 				394CFED9216D3E6100C62593 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Astronomy ObjC/Resources/Info.plist";
@@ -322,6 +334,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.linhbouniol.Astronomy-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Astronomy ObjC/View Controllers/Astronomy ObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -330,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Astronomy ObjC/Resources/Info.plist";
@@ -339,6 +355,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.linhbouniol.Astronomy-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Astronomy ObjC/View Controllers/Astronomy ObjC-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
