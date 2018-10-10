@@ -20,6 +20,7 @@
 		394CFF09216D6F9200C62593 /* LTBRover.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF08216D6F9200C62593 /* LTBRover.m */; };
 		394CFF0D216D940900C62593 /* LTBMarsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF0C216D940900C62593 /* LTBMarsController.m */; };
 		394CFF11216DC13200C62593 /* LTBPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF10216DC13200C62593 /* LTBPhotoCollectionViewCell.m */; };
+		394CFF36216E553300C62593 /* LTBCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF35216E553300C62593 /* LTBCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		394CFF0C216D940900C62593 /* LTBMarsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBMarsController.m; sourceTree = "<group>"; };
 		394CFF0F216DC13200C62593 /* LTBPhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBPhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		394CFF10216DC13200C62593 /* LTBPhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		394CFF34216E553300C62593 /* LTBCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBCache.h; sourceTree = "<group>"; };
+		394CFF35216E553300C62593 /* LTBCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 			children = (
 				394CFF0B216D940900C62593 /* LTBMarsController.h */,
 				394CFF0C216D940900C62593 /* LTBMarsController.m */,
+				394CFF34216E553300C62593 /* LTBCache.h */,
+				394CFF35216E553300C62593 /* LTBCache.m */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				394CFED9216D3E6100C62593 /* AppDelegate.m in Sources */,
 				394CFF0D216D940900C62593 /* LTBMarsController.m in Sources */,
 				394CFF11216DC13200C62593 /* LTBPhotoCollectionViewCell.m in Sources */,
+				394CFF36216E553300C62593 /* LTBCache.m in Sources */,
 				394CFF06216D6C7500C62593 /* LTBSolDescription.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
