@@ -21,6 +21,7 @@
 		394CFF0D216D940900C62593 /* LTBMarsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF0C216D940900C62593 /* LTBMarsController.m */; };
 		394CFF11216DC13200C62593 /* LTBPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF10216DC13200C62593 /* LTBPhotoCollectionViewCell.m */; };
 		394CFF36216E553300C62593 /* LTBCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF35216E553300C62593 /* LTBCache.m */; };
+		394CFF8A216E9D4100C62593 /* LTBFetchPhotoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF89216E9D4100C62593 /* LTBFetchPhotoOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		394CFF10216DC13200C62593 /* LTBPhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBPhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		394CFF34216E553300C62593 /* LTBCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBCache.h; sourceTree = "<group>"; };
 		394CFF35216E553300C62593 /* LTBCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBCache.m; sourceTree = "<group>"; };
+		394CFF88216E9D4100C62593 /* LTBFetchPhotoOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBFetchPhotoOperation.h; sourceTree = "<group>"; };
+		394CFF89216E9D4100C62593 /* LTBFetchPhotoOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBFetchPhotoOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 				394CFEEE216D4E8F00C62593 /* App Lifecycle */,
 				394CFF0E216DC0AA00C62593 /* View */,
 				394CFEEF216D4E9C00C62593 /* View Controllers */,
+				394CFF87216E9C0C00C62593 /* Operation */,
 				394CFEF0216D4EA600C62593 /* Storyboards */,
 				394CFEF1216D4EAE00C62593 /* Resources */,
 			);
@@ -165,6 +169,15 @@
 				394CFF10216DC13200C62593 /* LTBPhotoCollectionViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		394CFF87216E9C0C00C62593 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				394CFF88216E9D4100C62593 /* LTBFetchPhotoOperation.h */,
+				394CFF89216E9D4100C62593 /* LTBFetchPhotoOperation.m */,
+			);
+			path = Operation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +258,7 @@
 				394CFF03216D61F900C62593 /* LTBCamera.m in Sources */,
 				394CFEF8216D50C700C62593 /* PhotoDetailViewController.swift in Sources */,
 				394CFF09216D6F9200C62593 /* LTBRover.m in Sources */,
+				394CFF8A216E9D4100C62593 /* LTBFetchPhotoOperation.m in Sources */,
 				394CFED9216D3E6100C62593 /* AppDelegate.m in Sources */,
 				394CFF0D216D940900C62593 /* LTBMarsController.m in Sources */,
 				394CFF11216DC13200C62593 /* LTBPhotoCollectionViewCell.m in Sources */,
