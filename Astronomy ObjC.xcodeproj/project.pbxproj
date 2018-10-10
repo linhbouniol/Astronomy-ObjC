@@ -19,6 +19,7 @@
 		394CFF06216D6C7500C62593 /* LTBSolDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF05216D6C7500C62593 /* LTBSolDescription.m */; };
 		394CFF09216D6F9200C62593 /* LTBRover.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF08216D6F9200C62593 /* LTBRover.m */; };
 		394CFF0D216D940900C62593 /* LTBMarsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF0C216D940900C62593 /* LTBMarsController.m */; };
+		394CFF11216DC13200C62593 /* LTBPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF10216DC13200C62593 /* LTBPhotoCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		394CFF08216D6F9200C62593 /* LTBRover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBRover.m; sourceTree = "<group>"; };
 		394CFF0B216D940900C62593 /* LTBMarsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBMarsController.h; sourceTree = "<group>"; };
 		394CFF0C216D940900C62593 /* LTBMarsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBMarsController.m; sourceTree = "<group>"; };
+		394CFF0F216DC13200C62593 /* LTBPhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		394CFF10216DC13200C62593 /* LTBPhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBPhotoCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 				394CFEF9216D545800C62593 /* Model */,
 				394CFF0A216D934200C62593 /* Model Controller */,
 				394CFEEE216D4E8F00C62593 /* App Lifecycle */,
+				394CFF0E216DC0AA00C62593 /* View */,
 				394CFEEF216D4E9C00C62593 /* View Controllers */,
 				394CFEF0216D4EA600C62593 /* Storyboards */,
 				394CFEF1216D4EAE00C62593 /* Resources */,
@@ -147,6 +151,15 @@
 				394CFF0C216D940900C62593 /* LTBMarsController.m */,
 			);
 			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		394CFF0E216DC0AA00C62593 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				394CFF0F216DC13200C62593 /* LTBPhotoCollectionViewCell.h */,
+				394CFF10216DC13200C62593 /* LTBPhotoCollectionViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +242,7 @@
 				394CFF09216D6F9200C62593 /* LTBRover.m in Sources */,
 				394CFED9216D3E6100C62593 /* AppDelegate.m in Sources */,
 				394CFF0D216D940900C62593 /* LTBMarsController.m in Sources */,
+				394CFF11216DC13200C62593 /* LTBPhotoCollectionViewCell.m in Sources */,
 				394CFF06216D6C7500C62593 /* LTBSolDescription.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

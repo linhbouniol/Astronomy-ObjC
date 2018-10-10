@@ -18,7 +18,7 @@
                       maxSol:(NSInteger)maxSol
                      maxDate:(NSString *)maxDate
               numberOfPhotos:(NSInteger)numberOfPhotos
-              solDescription:(NSArray<LTBSolDescription *> *)solDescription
+             solDescriptions:(NSArray<LTBSolDescription *> *)solDescriptions
 {
     if (self = [super init]) {
         _name = name;
@@ -28,7 +28,7 @@
         _maxSol = maxSol;
         _maxDate = maxDate;
         _numberOfPhotos = numberOfPhotos;
-        _solDescription = solDescription;
+        _solDescriptions = solDescriptions;
     }
     return self;
 }
@@ -58,7 +58,7 @@
                        maxSol:maxSol
                       maxDate:maxDate
                numberOfPhotos:numberOfPhotos
-               solDescription:solDescriptionArray];
+              solDescriptions:solDescriptionArray];
 }
 
 

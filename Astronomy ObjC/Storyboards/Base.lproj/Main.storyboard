@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="Hwa-3u-5Ai">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="Hwa-3u-5Ai" customClass="LTBPhotoCollectionViewCell">
                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -43,7 +43,8 @@
                                     <constraint firstAttribute="bottom" secondItem="ppx-lv-nfG" secondAttribute="bottom" id="zdm-zG-ZDS"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="3CE-ep-nPE" kind="show" id="phR-9g-4XU"/>
+                                    <outlet property="photoView" destination="ppx-lv-nfG" id="4N9-56-aj3"/>
+                                    <segue destination="3CE-ep-nPE" kind="show" identifier="ShowDetail" id="phR-9g-4XU"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -81,6 +82,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqW-gu-UKt">
                                 <rect key="frame" x="114" y="523" width="147" height="30"/>
                                 <state key="normal" title="Save to Photo Library"/>
+                                <connections>
+                                    <action selector="save:" destination="3CE-ep-nPE" eventType="touchUpInside" id="oOt-S1-fnS"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="j80-zf-vOz">
                                 <rect key="frame" x="16" y="483" width="116.5" height="20.5"/>
@@ -116,6 +120,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rrb-tM-oVt"/>
                     </view>
+                    <connections>
+                        <outlet property="cameraLabel" destination="hae-Jy-ejT" id="DXO-e3-uHA"/>
+                        <outlet property="detailLabel" destination="tTF-bZ-Vqs" id="FqZ-er-Z13"/>
+                        <outlet property="photoView" destination="6pQ-J0-RV0" id="BG3-Up-4xK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQF-Z3-DwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

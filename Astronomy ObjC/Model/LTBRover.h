@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSInteger maxSol;
 @property (nonatomic, readonly) NSString *maxDate;
 @property (nonatomic, readonly) NSInteger numberOfPhotos; // total_photos
-@property (nonatomic, readonly) NSArray<LTBSolDescription *> *solDescription; //photos
+@property (nonatomic, readonly) NSArray<LTBSolDescription *> *solDescriptions; //photos
 
 - (instancetype)initWithName:(NSString *)name
                   launchDate:(NSString *)launchDate
@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
                       maxSol:(NSInteger)maxSol
                      maxDate:(NSString *)maxDate
               numberOfPhotos:(NSInteger)numberOfPhotos
-              solDescription:(NSArray<LTBSolDescription *> *)solDescription;
+             solDescriptions:(NSArray<LTBSolDescription *> *)solDescriptions;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dicitonary;
 
