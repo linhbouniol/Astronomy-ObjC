@@ -6,7 +6,7 @@
 //  Copyright © 2018 Linh Bouniol. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @class LTBPhoto;
 
@@ -14,11 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LTBFetchPhotoOperation : NSOperation
 
-//@property (nonatomic) LTBPhoto *photo;    //private
+@property (nonatomic) LTBPhoto *photo;
+@property (nonatomic, readonly, nullable) UIImage *image;
 
 - (instancetype)initWithPhoto:(LTBPhoto *)photo;
-- (void)start;
-- (void)cancel;
+//- (void)start;    // dont need to write these here, they are part of NSOperation, super class
+//- (void)cancel;
 
 @end
 

@@ -22,6 +22,7 @@
 		394CFF11216DC13200C62593 /* LTBPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF10216DC13200C62593 /* LTBPhotoCollectionViewCell.m */; };
 		394CFF36216E553300C62593 /* LTBCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF35216E553300C62593 /* LTBCache.m */; };
 		394CFF8A216E9D4100C62593 /* LTBFetchPhotoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF89216E9D4100C62593 /* LTBFetchPhotoOperation.m */; };
+		394CFF8E216EC10100C62593 /* NSURL+Secure.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CFF8D216EC10100C62593 /* NSURL+Secure.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		394CFF35216E553300C62593 /* LTBCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBCache.m; sourceTree = "<group>"; };
 		394CFF88216E9D4100C62593 /* LTBFetchPhotoOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBFetchPhotoOperation.h; sourceTree = "<group>"; };
 		394CFF89216E9D4100C62593 /* LTBFetchPhotoOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBFetchPhotoOperation.m; sourceTree = "<group>"; };
+		394CFF8C216EC10100C62593 /* NSURL+Secure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+Secure.h"; sourceTree = "<group>"; };
+		394CFF8D216EC10100C62593 /* NSURL+Secure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Secure.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 		394CFED6216D3E6100C62593 /* Astronomy ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				394CFF8B216EC0D700C62593 /* Categories */,
 				394CFEF9216D545800C62593 /* Model */,
 				394CFF0A216D934200C62593 /* Model Controller */,
 				394CFEEE216D4E8F00C62593 /* App Lifecycle */,
@@ -180,6 +184,15 @@
 			path = Operation;
 			sourceTree = "<group>";
 		};
+		394CFF8B216EC0D700C62593 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				394CFF8C216EC10100C62593 /* NSURL+Secure.h */,
+				394CFF8D216EC10100C62593 /* NSURL+Secure.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,6 +274,7 @@
 				394CFF8A216E9D4100C62593 /* LTBFetchPhotoOperation.m in Sources */,
 				394CFED9216D3E6100C62593 /* AppDelegate.m in Sources */,
 				394CFF0D216D940900C62593 /* LTBMarsController.m in Sources */,
+				394CFF8E216EC10100C62593 /* NSURL+Secure.m in Sources */,
 				394CFF11216DC13200C62593 /* LTBPhotoCollectionViewCell.m in Sources */,
 				394CFF36216E553300C62593 /* LTBCache.m in Sources */,
 				394CFF06216D6C7500C62593 /* LTBSolDescription.m in Sources */,

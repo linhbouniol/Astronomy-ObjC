@@ -74,8 +74,8 @@ static NSString * const apiKeyString = @"qzGsj0zsKk6CA9JZP1UjAbpQHabBfaPg2M5dGMB
     
     NSURLComponents *components = [NSURLComponents componentsWithURL:baseURL resolvingAgainstBaseURL:YES];
     NSURLQueryItem *solQueryItem = [NSURLQueryItem queryItemWithName:@"sol" value:[NSString stringWithFormat:@"%ld", (long)sol]];
-        NSURLQueryItem *apiKey = [NSURLQueryItem queryItemWithName:@"api_key" value:apiKeyString];
-        components.queryItems = @[solQueryItem, apiKey];
+    NSURLQueryItem *apiKey = [NSURLQueryItem queryItemWithName:@"api_key" value:apiKeyString];
+    components.queryItems = @[solQueryItem, apiKey];
     
     
     NSURL *url = [components URL];
@@ -103,7 +103,7 @@ static NSString * const apiKeyString = @"qzGsj0zsKk6CA9JZP1UjAbpQHabBfaPg2M5dGMB
         if (![dictionary isKindOfClass:[NSDictionary class]]) {
             NSLog(@"JSON was not a dictionary");
             dispatch_async(dispatch_get_main_queue(), ^{
-                completion(nil, [[NSError alloc] init]);
+                completion(nil, [[NSError alloc] initWithDomain:@"LTBErrorDomain" code:-1 userInfo:nil]);
             });
             return;
         }

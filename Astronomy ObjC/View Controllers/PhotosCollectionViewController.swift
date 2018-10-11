@@ -13,6 +13,9 @@ class PhotosCollectionViewController: UICollectionViewController {
     let solLabel = UILabel()
     
     private let marsController = LTBMarsController()
+    private let cache = LTBCache<NSNumber, UIImage>()
+    private let fetchPhotoQueue = OperationQueue()
+    private var operations = [Int : Operation]()
     
     private var roverInfo: LTBRover? {
         didSet {
@@ -40,7 +43,7 @@ class PhotosCollectionViewController: UICollectionViewController {
     
     private var photoReferences = [LTBPhoto]() {
         didSet {
-//            cache.clear()
+            cache.clear()
             collectionView?.reloadData()
         }
     }
@@ -122,7 +125,41 @@ class PhotosCollectionViewController: UICollectionViewController {
     }
 
     private func loadImage(forCell cell: LTBPhotoCollectionViewCell, forItemAt indexPath: IndexPath) {
+        let photoReference = photoReferences[indexPath.item]
         
+        if let cachedImage = cache.value(forKey: photoReference.photoId as NSNumber) {
+            cell.photoView?.image = cachedImage
+            return
+        }
+        
+        // Start an operation to fetch image data
+        let fetchOperation = LTBFetchPhotoOperation(photo: photoReference)
+        let cacheOperation = BlockOperation {
+            if let image = fetchOperation.image {
+                self.cache.cache(withValue: image, key: photoReference.photoId as NSNumber)
+            }
+        }
+        let completionOperation = BlockOperation {
+            defer { self.operations.removeValue(forKey: photoReference.photoId) }
+            
+            if let currentIndexPath = self.collectionView?.indexPath(for: cell),
+                currentIndexPath != indexPath {
+                return // Cell has been reused
+            }
+            
+            if let image = fetchOperation.image {
+                cell.photoView?.image = image
+            }
+        }
+        
+        cacheOperation.addDependency(fetchOperation)
+        completionOperation.addDependency(fetchOperation)
+        
+        fetchPhotoQueue.addOperation(fetchOperation)
+        fetchPhotoQueue.addOperation(cacheOperation)
+        OperationQueue.main.addOperation(completionOperation)
+        
+        operations[photoReference.photoId] = fetchOperation
     }
     
     // MARK: - Navigation

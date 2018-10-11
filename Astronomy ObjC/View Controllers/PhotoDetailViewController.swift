@@ -56,7 +56,7 @@ class PhotoDetailViewController: UIViewController {
         guard let photo = photo, isViewLoaded else { return }
         
         do {
-            let data = try Data(contentsOf: photo.imageURL)
+            let data = try Data(contentsOf: (photo.imageURL as NSURL).https)
             photoView.image = UIImage(data: data)
 //            let dateString = dateFormatter.string(from: photo.earthDate)
             detailLabel.text = "Taken by \(photo.camera.roverId) on \(photo.earthDate) (Sol \(photo.sol))"

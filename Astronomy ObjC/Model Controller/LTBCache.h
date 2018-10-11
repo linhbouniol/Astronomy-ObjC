@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)init;
 
 - (void)cacheWithValue:(Value)value key:(Key)key;   // generic in .h file: anything?
-- (Value)valueForKey:(Key)key;
+- (nullable Value)valueForKey:(Key)key;
 - (void)clear;
 
 @end
